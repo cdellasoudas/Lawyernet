@@ -100,3 +100,156 @@ a:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(37, 99, 235, 0.39);
 }
+
+/* ===== Mobile Responsive Styles ===== */
+
+@media (max-width: 768px) {
+  /* Container */
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 6vw, 2.5rem) !important;
+  }
+
+  h3 {
+    font-size: clamp(1.3rem, 5vw, 2rem) !important;
+  }
+
+  h4 {
+    font-size: 1rem !important;
+  }
+
+  /* Glass cards */
+  .glass {
+    border-radius: 12px;
+  }
+
+  /* Header / Nav */
+  .app-container > header {
+    padding: 1rem !important;
+  }
+
+  .app-container > header .container {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .app-container > header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .app-container > header nav a {
+    margin-left: 0.75rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 3rem 1.5rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(2rem, 10vw, 3.5rem) !important;
+    letter-spacing: -1px !important;
+  }
+
+  .hero-section p {
+    font-size: 1.1rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Sections */
+  section.container {
+    padding: 3rem 1rem !important;
+  }
+
+  /* Manifesto */
+  #manifesto .glass {
+    padding: 2rem 1.5rem !important;
+    border-radius: 16px !important;
+  }
+
+  #manifesto .glass p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Projects */
+  #projects .glass {
+    padding: 2rem 1.5rem !important;
+    border-radius: 16px !important;
+  }
+
+  #projects .glass p {
+    font-size: 1rem !important;
+  }
+
+  /* What We Do */
+  #what-we-do .glass {
+    padding: 2rem 1.5rem !important;
+    border-radius: 16px !important;
+  }
+
+  #what-we-do .glass p {
+    font-size: 1.1rem !important;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .app-container > header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .app-container > header nav {
+    justify-content: center;
+  }
+
+  .app-container > header nav a {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+  }
+
+  .hero-section {
+    padding: 2.5rem 1rem !important;
+    margin-top: 1.5rem !important;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem !important;
+  }
+
+  .hero-section p {
+    font-size: 1rem !important;
+  }
+
+  section.container {
+    padding: 2rem 0.75rem !important;
+  }
+
+  #manifesto .glass,
+  #projects .glass,
+  #what-we-do .glass {
+    padding: 1.5rem 1rem !important;
+  }
+}
