@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Manifesto = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <section id="manifesto" className="container" style={{ padding: '6rem 2rem' }}>
+    <section id="manifesto" className="container" style={{ padding: isOpen ? '6rem 2rem' : '2rem 2rem', transition: 'padding 0.3s ease' }}>
       <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-        <h2 style={{ fontSize: '3rem', marginBottom: '2rem', background: 'linear-gradient(to right, #60a5fa, #c084fc)', WebkitBackgroundClip: 'text', color: 'transparent', letterSpacing: '-1.5px', fontWeight: 800 }}>
+        <h2 
+          onClick={() => setIsOpen(!isOpen)}
+          style={{ cursor: 'pointer', fontSize: '3rem', marginBottom: isOpen ? '2rem' : '0', background: 'linear-gradient(to right, #60a5fa, #c084fc)', WebkitBackgroundClip: 'text', color: 'transparent', letterSpacing: '-1.5px', fontWeight: 800, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', transition: 'all 0.3s ease' }}
+        >
           Every Man Manifesto
+          <span style={{ fontSize: '2.5rem', color: '#c084fc', fontWeight: 400 }}>{isOpen ? '−' : '+'}</span>
         </h2>
 
-        <div className="glass" style={{ padding: '4rem', borderRadius: '24px', textAlign: 'left', position: 'relative' }}>
+        {isOpen && (
+        <div className="glass animate-fade-in" style={{ padding: '4rem', borderRadius: '24px', textAlign: 'left', position: 'relative' }}>
           <p style={{ fontSize: '1.25rem', lineHeight: '1.8', color: '#fff', opacity: 0.95, marginBottom: '3rem' }}>
             Ferdinand von Schirach, currently the most successful writer in the German language, has written a new book. It is called "Every Man" and is hardly bigger and more extensive than a passport. In it are written six European fundamental rights, which concern the great challenges of our time:
           </p>
@@ -67,6 +74,7 @@ const Manifesto = () => {
             </li>
           </ul>
         </div>
+        )}
       </div>
     </section>
   );

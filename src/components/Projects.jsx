@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Projects = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <section id="projects" className="container" style={{ padding: '6rem 2rem' }}>
-      <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-        <h2 style={{ fontSize: '3.5rem', marginBottom: '1.5rem', background: 'linear-gradient(to right, #60a5fa, #3b82f6)', WebkitBackgroundClip: 'text', color: 'transparent', letterSpacing: '-1px', fontWeight: 800 }}>
+    <section id="projects" className="container" style={{ padding: isOpen ? '6rem 2rem' : '2rem 2rem', transition: 'padding 0.3s ease' }}>
+      <div style={{ textAlign: 'center', marginBottom: isOpen ? '4rem' : '0' }}>
+        <h2 
+          onClick={() => setIsOpen(!isOpen)}
+          style={{ cursor: 'pointer', fontSize: '3.5rem', marginBottom: isOpen ? '1.5rem' : '0', background: 'linear-gradient(to right, #60a5fa, #3b82f6)', WebkitBackgroundClip: 'text', color: 'transparent', letterSpacing: '-1px', fontWeight: 800, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', transition: 'all 0.3s ease' }}>
           Current Projects
+          <span style={{ fontSize: '2.5rem', color: '#60a5fa', fontWeight: 400 }}>{isOpen ? '−' : '+'}</span>
         </h2>
-        <div style={{ width: '80px', height: '4px', background: 'var(--primary)', margin: '0 auto', borderRadius: '2px' }}></div>
+        {isOpen && <div style={{ width: '80px', height: '4px', background: 'var(--primary)', margin: '0 auto', borderRadius: '2px' }}></div>}
       </div>
       
+      {isOpen && (
+      <div className="animate-fade-in">
       {/* UBI Section */}
       <div className="glass" style={{ padding: '4rem', borderRadius: '24px', position: 'relative', overflow: 'hidden', marginBottom: '4rem' }}>
         <h3 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: '#60a5fa' }}>UBI</h3>
@@ -63,6 +70,8 @@ const Projects = () => {
         <p style={{ fontSize: '1.15rem', marginBottom: '1.5rem', lineHeight: '1.8', color: 'var(--text-dark)' }}>Climate impacts, already experienced by the world’s poorest, are today palpable across the planet. We’re facing extreme weather events, catastrophic loss of wildlife and a crisis over future access to freshwater and food.</p>
         <p style={{ fontSize: '1.3rem', color: '#fff', fontWeight: 600, borderLeft: '4px solid #34d399', paddingLeft: '1.5rem' }}>We work to bring awareness, mobilise community action and petition authorities.</p>
       </div>
+      </div>
+      )}
     </section>
   );
 };

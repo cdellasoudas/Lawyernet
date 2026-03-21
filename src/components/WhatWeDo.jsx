@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const WhatWeDo = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <section id="what-we-do" className="container" style={{ padding: '6rem 2rem' }}>
-      <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-        <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem', color: '#f8fafc', letterSpacing: '-1px', fontWeight: 800 }}>
+    <section id="what-we-do" className="container" style={{ padding: isOpen ? '6rem 2rem' : '2rem 2rem', transition: 'padding 0.3s ease' }}>
+      <div style={{ textAlign: 'center', marginBottom: isOpen ? '4rem' : '0' }}>
+        <h2 
+          onClick={() => setIsOpen(!isOpen)}
+          style={{ cursor: 'pointer', fontSize: '3rem', marginBottom: isOpen ? '1.5rem' : '0', color: '#f8fafc', letterSpacing: '-1px', fontWeight: 800, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', transition: 'all 0.3s ease' }}>
           What Do We Do?
+          <span style={{ fontSize: '2.5rem', color: '#f8fafc', fontWeight: 400 }}>{isOpen ? '−' : '+'}</span>
         </h2>
-        <div style={{ width: '80px', height: '4px', background: 'var(--secondary)', margin: '0 auto 3rem', borderRadius: '2px' }}></div>
+        {isOpen && <div style={{ width: '80px', height: '4px', background: 'var(--secondary)', margin: '0 auto 3rem', borderRadius: '2px' }}></div>}
       </div>
       
-      <div className="glass" style={{ padding: '4rem', borderRadius: '24px', marginBottom: '3rem' }}>
+      {isOpen && (
+      <div className="glass animate-fade-in" style={{ padding: '4rem', borderRadius: '24px', marginBottom: '3rem' }}>
         <p style={{ fontSize: '1.6rem', lineHeight: '1.6', color: '#fff', textAlign: 'center', fontWeight: 500, maxWidth: '900px', margin: '0 auto 4rem' }}>
           We are firm believers that denoting yourself a «think tank» also requires you to take action. As a result, this is what we do:
         </p>
@@ -33,6 +39,7 @@ const WhatWeDo = () => {
           </div>
         </div>
       </div>
+      )}
     </section>
   );
 };
