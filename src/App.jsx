@@ -31,9 +31,9 @@ function App() {
           </div>
           <nav>
             <a href="#manifesto" style={{ marginLeft: '1.5rem', color: 'var(--text-dark)', fontWeight: 500, transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--primary)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Manifesto</a>
-            <a href="#ubi-pilot" style={{ marginLeft: '1.5rem', color: 'var(--text-dark)', fontWeight: 500, transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--primary)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Our UBI Pilot</a>
             <a href="#projects" style={{ marginLeft: '1.5rem', color: 'var(--text-dark)', fontWeight: 500, transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--primary)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Current Focus</a>
             <a href="#what-we-do" style={{ marginLeft: '1.5rem', color: 'var(--text-dark)', fontWeight: 500, transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--primary)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>What We Do</a>
+            <a href="#ubi-pilot" style={{ marginLeft: '1.5rem', color: 'var(--text-dark)', fontWeight: 500, transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--primary)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Our UBI Pilot</a>
           </nav>
         </div>
       </header>
@@ -41,9 +41,9 @@ function App() {
       <main>
         <Hero />
         <Manifesto />
-        <UbiPilot />
         <Projects />
         <WhatWeDo />
+        <UbiPilot />
       </main>
 
       <Footer />

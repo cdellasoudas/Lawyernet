@@ -21,7 +21,7 @@ const UbiPilot = () => {
           Read the EDBIC Marketplace Whitepaper below to learn about our comprehensive Universal Basic Income pilot.
         </p>
         
-        <div style={{ width: '100%', height: '800px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--glass-border)', marginBottom: '2rem' }}>
+        <div style={{ width: '100%', height: '800px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--glass-border)' }}>
           <iframe 
             src="/EDBIC_Marketplace_Whitepaper.pdf" 
             width="100%" 
@@ -30,15 +30,6 @@ const UbiPilot = () => {
             title="EDBIC Marketplace Whitepaper"
           />
         </div>
-
-        <a 
-          href="/EDBIC_Marketplace_Whitepaper.pdf" 
-          download 
-          className="btn btn-primary"
-          style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)', padding: '1rem 2rem', fontSize: '1.1rem', color: '#fff', textDecoration: 'none' }}
-        >
-          Download PDF Document
-        </a>
       </div>
       )}
     </section>
