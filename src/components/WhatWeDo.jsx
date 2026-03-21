@@ -16,25 +16,25 @@ const WhatWeDo = () => {
       </div>
       
       {isOpen && (
-      <div className="glass animate-fade-in" style={{ padding: '4rem', borderRadius: '24px', marginBottom: '3rem' }}>
-        <p style={{ fontSize: '1.6rem', lineHeight: '1.6', color: '#fff', textAlign: 'center', fontWeight: 500, maxWidth: '900px', margin: '0 auto 4rem' }}>
+      <div className="animate-fade-in" style={{ background: '#ffffff', padding: '4rem', borderRadius: '24px', marginBottom: '3rem', boxShadow: '0 10px 30px rgba(0,0,0,0.15)', borderTop: '4px solid #0ea5e9' }}>
+        <p style={{ fontSize: '1.6rem', lineHeight: '1.6', color: '#1e293b', textAlign: 'center', fontWeight: 500, maxWidth: '900px', margin: '0 auto 4rem' }}>
           We are firm believers that denoting yourself a «think tank» also requires you to take action. As a result, this is what we do:
         </p>
         
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', textAlign: 'center' }}>
-          <div style={{ background: 'rgba(64,196,255,0.1)', padding: '2rem', borderRadius: '16px', fontSize: '1.25rem', fontWeight: 600, color: '#40c4ff', border: '1px solid rgba(64,196,255,0.2)', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'none'}>
+          <div style={{ background: '#f0f9ff', padding: '2rem', borderRadius: '16px', fontSize: '1.25rem', fontWeight: 600, color: '#0284c7', border: '1px solid #bae6fd', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'none'}>
             We host Meetups
           </div>
-          <div style={{ background: 'rgba(64,196,255,0.1)', padding: '2rem', borderRadius: '16px', fontSize: '1.25rem', fontWeight: 600, color: '#40c4ff', border: '1px solid rgba(64,196,255,0.2)', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'none'}>
+          <div style={{ background: '#f0f9ff', padding: '2rem', borderRadius: '16px', fontSize: '1.25rem', fontWeight: 600, color: '#0284c7', border: '1px solid #bae6fd', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'none'}>
             We speak
           </div>
-          <div style={{ background: 'rgba(64,196,255,0.1)', padding: '2rem', borderRadius: '16px', fontSize: '1.25rem', fontWeight: 600, color: '#40c4ff', border: '1px solid rgba(64,196,255,0.2)', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'none'}>
+          <div style={{ background: '#f0f9ff', padding: '2rem', borderRadius: '16px', fontSize: '1.25rem', fontWeight: 600, color: '#0284c7', border: '1px solid #bae6fd', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'none'}>
             We ask questions
           </div>
-          <div style={{ background: 'rgba(64,196,255,0.1)', padding: '2rem', borderRadius: '16px', fontSize: '1.25rem', fontWeight: 600, color: '#40c4ff', border: '1px solid rgba(64,196,255,0.2)', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'none'}>
+          <div style={{ background: '#f0f9ff', padding: '2rem', borderRadius: '16px', fontSize: '1.25rem', fontWeight: 600, color: '#0284c7', border: '1px solid #bae6fd', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'none'}>
             We listen
           </div>
-          <div style={{ background: 'rgba(64,196,255,0.1)', padding: '2rem', borderRadius: '16px', fontSize: '1.25rem', fontWeight: 600, color: '#40c4ff', border: '1px solid rgba(64,196,255,0.2)', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'none'}>
+          <div style={{ background: '#f0f9ff', padding: '2rem', borderRadius: '16px', fontSize: '1.25rem', fontWeight: 600, color: '#0284c7', border: '1px solid #bae6fd', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'none'}>
             We write and research
           </div>
         </div>
