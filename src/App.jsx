@@ -30,11 +30,11 @@ function App() {
             <img src="/logo.png" alt="Lawyernet Icon" style={{ height: '40px', width: 'auto' }} />
             <img src="/lawyernet.png" alt="Lawyernet Text" style={{ height: '24px', width: 'auto' }} />
           </a>
-          <nav>
-            <a href="#manifesto" style={{ marginLeft: '1.5rem', color: 'var(--text-dark)', fontWeight: 300, letterSpacing: '1px', textTransform: 'uppercase', transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--text-light)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Manifesto</a>
-            <a href="#projects" style={{ marginLeft: '1.5rem', color: 'var(--text-dark)', fontWeight: 300, letterSpacing: '1px', textTransform: 'uppercase', transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--text-light)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Current Focus</a>
-            <a href="#what-we-do" style={{ marginLeft: '1.5rem', color: 'var(--text-dark)', fontWeight: 300, letterSpacing: '1px', textTransform: 'uppercase', transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--text-light)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>What We Do</a>
-            <a href="#ubi-pilot" style={{ marginLeft: '1.5rem', color: 'var(--text-dark)', fontWeight: 300, letterSpacing: '1px', textTransform: 'uppercase', transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--text-light)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Our UBI Pilot</a>
+          <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+            <a href="#manifesto" style={{ color: 'var(--text-dark)', fontSize: '0.8rem', fontWeight: 400, letterSpacing: '2px', textTransform: 'uppercase', transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--text-light)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Manifesto</a>
+            <a href="#projects" style={{ color: 'var(--text-dark)', fontSize: '0.8rem', fontWeight: 400, letterSpacing: '2px', textTransform: 'uppercase', transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--text-light)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Current Focus</a>
+            <a href="#what-we-do" style={{ color: 'var(--text-dark)', fontSize: '0.8rem', fontWeight: 400, letterSpacing: '2px', textTransform: 'uppercase', transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--text-light)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>What We Do</a>
+            <a href="#ubi-pilot" style={{ color: 'var(--text-dark)', fontSize: '0.8rem', fontWeight: 400, letterSpacing: '2px', textTransform: 'uppercase', transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--text-light)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Our UBI Pilot</a>
           </nav>
         </div>
       </header>
