@@ -174,45 +174,27 @@ a:hover {
     line-height: 1.5 !important;
   }
 
-  /* Sections */
-  section.container {
-    padding: 3rem 1rem !important;
+  /* Global Typography Enforcements for Mobile */
+  main p, main li {
+    font-size: 1.25rem !important;
+    line-height: 1.8 !important;
   }
-
-  /* Manifesto */
-  #manifesto .glass {
-    padding: 2rem 1.5rem !important;
-    border-radius: 16px !important;
+  
+  main h3 {
+    font-size: 1.8rem !important;
   }
-
-  #manifesto .glass p {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
-  }
-
-  /* Projects */
-  #projects .glass {
-    padding: 2rem 1.5rem !important;
-    border-radius: 16px !important;
-  }
-
-  #projects .glass p {
-    font-size: 1rem !important;
-  }
-
-  /* What We Do */
-  #what-we-do .glass {
-    padding: 2rem 1.5rem !important;
-    border-radius: 16px !important;
-  }
-
-  #what-we-do .glass p {
-    font-size: 1.1rem !important;
+  
+  main h4, main strong {
+    font-size: 1.3rem !important;
   }
 
   /* Footer */
   footer {
     padding: 2rem 1rem !important;
+  }
+  
+  footer p {
+    font-size: 1rem !important;
   }
 }
 
