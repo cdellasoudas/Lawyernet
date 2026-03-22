@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer style={{ marginTop: '4rem', padding: '3rem 2rem', borderTop: '1px solid var(--glass-border)', textAlign: 'center', background: 'rgba(0,0,0,0.2)' }}>
       <div className="container">
-        <img src="/logo.jpg" alt="Lawyernet Logo" style={{ height: '60px', width: 'auto', marginBottom: '1.5rem', opacity: 0.8 }} />
+        <img src="/logo.png" alt="Lawyernet Logo" style={{ height: '60px', width: 'auto', marginBottom: '1.5rem', opacity: 0.8 }} />
         <p style={{ color: '#cbd5e1', opacity: 0.7, marginBottom: '2rem', fontWeight: 300 }}>
           Focusing on pro bono services and activism for a better tomorrow.
         </p>
