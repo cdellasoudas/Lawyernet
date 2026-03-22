@@ -8,9 +8,9 @@ const UbiPilot = () => {
       <div style={{ textAlign: 'center', marginBottom: isOpen ? '4rem' : '0' }}>
         <h2 
           onClick={() => setIsOpen(!isOpen)}
-          style={{ cursor: 'pointer', fontSize: '3.5rem', marginBottom: isOpen ? '1.5rem' : '0', color: '#ffffff', textShadow: '1px 1px 2px rgba(255,255,255,0.4), -1px -1px 2px rgba(0,0,0,0.5)', letterSpacing: '2px', fontWeight: 300, textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', transition: 'all 0.3s ease' }}>
+          style={{ cursor: 'pointer', fontSize: '2.4rem', marginBottom: isOpen ? '1.5rem' : '0', color: '#ffffff', textShadow: '1px 1px 2px rgba(255,255,255,0.4), -1px -1px 2px rgba(0,0,0,0.5)', letterSpacing: '2px', fontWeight: 300, textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', transition: 'all 0.3s ease' }}>
           Our UBI Pilot
-          <span style={{ fontSize: '2.5rem', color: '#ffffff', fontWeight: 200 }}>{isOpen ? '−' : '+'}</span>
+          <span style={{ fontSize: '2.4rem', color: '#ffffff', fontWeight: 200 }}>{isOpen ? '−' : '+'}</span>
         </h2>
         {isOpen && <div style={{ width: '80px', height: '1px', background: 'rgba(255,255,255,0.5)', margin: '0 auto', borderRadius: '2px' }}></div>}
       </div>
