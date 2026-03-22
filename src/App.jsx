@@ -26,9 +26,9 @@ function App() {
     <div className="app-container">
       <header style={{ padding: '1.5rem 2rem', position: 'sticky', top: 0, zIndex: 10, background: 'var(--glass-bg)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', borderBottom: '1px solid var(--glass-border)' }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <div style={{ fontSize: '1.5rem', fontWeight: 300, letterSpacing: '2px', textTransform: 'uppercase', color: '#fff' }}>
-            Lawyer<span style={{ fontWeight: 500 }}>Net</span>
-          </div>
+          <a href="#" style={{ display: 'flex', alignItems: 'center' }}>
+            <img src="/logo.jpg" alt="Lawyernet" style={{ height: '40px', width: 'auto' }} />
+          </a>
           <nav>
             <a href="#manifesto" style={{ marginLeft: '1.5rem', color: 'var(--text-dark)', fontWeight: 300, letterSpacing: '1px', textTransform: 'uppercase', transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--text-light)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Manifesto</a>
             <a href="#projects" style={{ marginLeft: '1.5rem', color: 'var(--text-dark)', fontWeight: 300, letterSpacing: '1px', textTransform: 'uppercase', transition: 'var(--transition)' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--text-light)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-dark)'}>Current Focus</a>
